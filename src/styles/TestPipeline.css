@@ -1,0 +1,150 @@
+.test-pipeline {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    /* Remove fixed height calculation */
+    height: auto;
+    min-height: min-content;
+    overflow: auto;
+}
+.pipeline-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 5px;
+}
+
+.pipeline-step-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pipeline-step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+  min-height: 40px;
+}
+
+.pipeline-step.pending {
+  background: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+.pipeline-step.running {
+  background: #e3f2fd;
+  border-color: #2196f3;
+}
+
+.pipeline-step.passed {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.pipeline-step.failed {
+  background: #ffebee;
+  border-color: #f44336;
+}
+
+.step-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.step-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.step-details {
+  flex: 1;
+}
+
+.step-label {
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.step-description {
+  font-size: 0.75em;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.step-error {
+  font-size: 0.75em;
+  color: #f44336;
+}
+
+.pipeline-connector {
+  height: 16px;
+  width: 2px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.connector-line {
+  width: 2px;
+  height: 100%;
+  background: #ddd;
+}
+
+.connector-line.running {
+  background: #2196f3;
+}
+
+.connector-line.passed {
+  background: #4caf50;
+}
+
+.connector-line.failed {
+  background: #f44336;
+}
+
+.step-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+}
+
+.loading-dot {
+  width: 8px;
+  height: 8px;
+  background: #2196f3;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
+

@@ -1,0 +1,124 @@
+.test-result {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+
+  .test-result.success {
+    border-left: 4px solid #2ecc71;
+  }
+
+  .test-result.failure {
+    border-left: 4px solid #e74c3c;
+  }
+
+  .result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .timestamp {
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  .status {
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+
+  .status.success {
+    background-color: #e8f5e9;
+    color: #2ecc71;
+  }
+
+  .status.failure {
+    background-color: #ffeaea;
+    color: #e74c3c;
+  }
+
+  .request-details {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+
+  .request-details h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+  }
+
+  .detail-item {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .detail-item .label {
+    flex: 0 0 120px;
+    font-weight: 600;
+    color: #666;
+  }
+
+  .detail-item .value {
+    color: #2c3e50;
+  }
+
+  .validations {
+    padding: 10px;
+  }
+
+  .validations h4 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+  }
+
+  .validation-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+
+  .validation-item.valid {
+    background-color: #e8f5e9;
+  }
+
+  .validation-item.invalid {
+    background-color: #ffeaea;
+  }
+
+  .validation-key {
+    flex: 0 0 100px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  .validation-status {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+  .valid .validation-status {
+    color: #2ecc71;
+  }
+
+  .invalid .validation-status {
+    color: #e74c3c;
+  }
+
+  .validation-message {
+    color: #e74c3c;
+    font-size: 0.9em;
+  }

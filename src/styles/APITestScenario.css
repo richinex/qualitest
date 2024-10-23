@@ -1,0 +1,124 @@
+.api-test-scenario {
+    position: relative;
+    flex: 1;
+    min-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .scenario-header h2 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .status-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: white;
+  }
+
+  .status-badge.blue { background-color: #3498db; }
+  .status-badge.green { background-color: #2ecc71; }
+  .status-badge.red { background-color: #e74c3c; }
+  .status-badge.orange { background-color: #f39c12; }
+  .status-badge.gray { background-color: #95a5a6; }
+
+  .test-progress {
+    flex: 1;
+    min-height: 60px;
+    overflow-y: auto;
+  }
+
+  .current-request {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+
+  .current-request p {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 0.9em;
+  }
+
+  .results-container {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .results-container::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .results-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  .results-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  .results-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .control-panel {
+    margin-top: auto;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background: white;
+  }
+
+  .control-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+  }
+
+  .control-button.start {
+    background-color: #3498db;
+  }
+
+  .control-button.stop {
+    background-color: #e74c3c;
+  }
+
+  .control-button.replay {
+    background-color: #2ecc71;
+  }
+
+  .control-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
